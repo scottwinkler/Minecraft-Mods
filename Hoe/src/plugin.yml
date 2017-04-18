@@ -1,0 +1,6 @@
+name: ScottsPluginHoe
+main: com.cocoapebbles.ScottsPluginHoe.Main
+version: 1.0
+commands:
+   hoe:
+      description: Creates a magic hoe

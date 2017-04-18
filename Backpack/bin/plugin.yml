@@ -1,0 +1,6 @@
+name: ScottsPluginBackpack
+main: com.cocoapebbles.ScottsPluginBackpack.Main
+version: 1.0
+commands:
+   bp:
+      description: Opens the backpack
