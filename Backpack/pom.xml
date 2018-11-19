@@ -1,0 +1,68 @@
+<!DOCTYPE project [
+        <!ELEMENT project (modelVersion|groupId|artifactId|packaging|version|name|url|properties|dependencyManagement|repositories|dependencies|build)*>
+        <!ATTLIST project
+                xmlns CDATA #REQUIRED
+                xmlns:xsi CDATA #REQUIRED
+                xsi:schemaLocation CDATA #REQUIRED>
+        <!ELEMENT modelVersion (#PCDATA)>
+        <!ELEMENT groupId (#PCDATA)>
+        <!ELEMENT artifactId (#PCDATA)>
+        <!ELEMENT packaging (#PCDATA)>
+        <!ELEMENT version (#PCDATA)>
+        <!ELEMENT name (#PCDATA)>
+        <!ELEMENT url (#PCDATA)>
+        <!ELEMENT properties (maven.compiler.target|maven.compiler.source)*>
+        <!ELEMENT maven.compiler.target (#PCDATA)>
+        <!ELEMENT maven.compiler.source (#PCDATA)>
+        <!ELEMENT dependencyManagement (dependencies)*>
+        <!ELEMENT dependencies (dependency)*>
+        <!ELEMENT dependency (groupId|artifactId|version|type|scope)*>
+        <!ELEMENT type (#PCDATA)>
+        <!ELEMENT scope (#PCDATA)>
+        <!ELEMENT repositories (repository)*>
+        <!ELEMENT repository (id|url)*>
+        <!ELEMENT id (#PCDATA)>
+        <!ELEMENT build (plugins)*>
+        <!ELEMENT plugins (plugin)*>
+        <!ELEMENT plugin (groupId|artifactId|version|configuration|executions)*>
+        <!ELEMENT configuration (createDependencyReducedPom)*>
+        <!ELEMENT createDependencyReducedPom (#PCDATA)>
+        <!ELEMENT executions (execution)*>
+        <!ELEMENT execution (phase|goals)*>
+        <!ELEMENT phase (#PCDATA)>
+        <!ELEMENT goals (goal)*>
+        <!ELEMENT goal (#PCDATA)>
+        ]>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.elliemae.cpe</groupId>
+  <artifactId>backpack</artifactId>
+  <packaging>jar</packaging>
+  <version>1.0-SNAPSHOT</version>
+  <name>backpack-plugin</name>
+  <url>http://maven.apache.org</url>
+    <properties>
+        <maven.compiler.target>1.8</maven.compiler.target>
+        <maven.compiler.source>1.8</maven.compiler.source>
+    </properties>
+
+
+
+    <repositories>
+        <repository>
+            <id>spigot-repo</id>
+            <url>https://hub.spigotmc.org/nexus/content/repositories/snapshots/</url>
+        </repository>
+    </repositories>
+
+  <dependencies>
+      <!--Spigot API-->
+      <dependency>
+          <groupId>org.spigotmc</groupId>
+          <artifactId>spigot-api</artifactId>
+          <version>1.13-R0.1-SNAPSHOT</version>
+          <scope>provided</scope>
+      </dependency>
+  </dependencies>
+</project>

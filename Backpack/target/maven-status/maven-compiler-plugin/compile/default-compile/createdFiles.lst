@@ -1,0 +1,5 @@
+com/cocoapebbles/backpack/utils/ConfigManager.class
+com/cocoapebbles/backpack/Main.class
+com/cocoapebbles/backpack/events/player/PlayerJoin.class
+com/cocoapebbles/backpack/commands/Backpack.class
+com/cocoapebbles/backpack/events/player/PlayerQuit.class

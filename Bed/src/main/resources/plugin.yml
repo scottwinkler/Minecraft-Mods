@@ -1,0 +1,9 @@
+main: org.cocoapebbles.bed.Main
+name: Bed
+version: 1.0
+author: Scott
+description: Quick bed utility
+commands:
+  bed:
+    description: Summons a bed
+    usage: "Usage: '/bed' to run command"

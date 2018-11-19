@@ -1,0 +1,6 @@
+name: Backpack
+main: com.cocoapebbles.backpack.Main
+version: 1.0
+commands:
+   bp:
+      description: Opens the backpack

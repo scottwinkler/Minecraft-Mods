@@ -1,6 +1,0 @@
-name: ScottsPluginHorse
-main: com.cocoapebbles.ScottsPluginHorse.Main
-version: 1.0
-commands:
-   horse:
-      description: Summons a swift Southern Horse

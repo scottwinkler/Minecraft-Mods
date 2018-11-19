@@ -1,0 +1,3 @@
+org/cocoapebbles/bed/commands/SummonBed.class
+org/cocoapebbles/bed/events/PlayerBedLeave.class
+org/cocoapebbles/bed/Main.class

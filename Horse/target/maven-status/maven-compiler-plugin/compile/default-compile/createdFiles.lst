@@ -1,0 +1,5 @@
+com/cocoapebbles/Horse/events/inventory/InventoryClick.class
+com/cocoapebbles/Horse/events/player/VehicleExit.class
+com/cocoapebbles/Horse/utils/ConfigManager.class
+com/cocoapebbles/Horse/Main.class
+com/cocoapebbles/Horse/commands/SummonHorse.class
